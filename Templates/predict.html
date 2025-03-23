@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction</title>
+        <style>
+            body {
+                background-color: rgba(255,253,208);
+                font-family: Arial, sans-serif;
+                color: #333;
+                text-align: center;
+                padding: 50px;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+                color: rgba(0,0,139,0.7);
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                font-size: 18px;
+                color: #212529;
+                font-style: italic;
+            }
+
+            strong {
+                color: #2c3e50; /* Darker text for important labels */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>{{ pred|safe }}</h1>
+    </body>
+</html>
